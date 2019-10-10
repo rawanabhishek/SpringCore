@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="student" class="com.bridgelabz.dependency.setter.Student">
+	<property name="studentName" value="Abhishek"></property>
+	<property name="id" value ="1"></property>
+	</bean>
+	
+	
+	<bean id="rishi" class="com.bridgelabz.dependency.setter.Student">
+	
+	<property name="studentName" value="Rishi"></property>
+	<property name="id" value ="2"></property>
+	
+	</bean>
+	
+	
+	<bean id="vishnu" class="com.bridgelabz.dependency.constructor.Student">
+	
+	<constructor-arg name="studentName" value="vishnu" />
+	<constructor-arg name="id" value ="3" />
+	
+	</bean>
+	
+	
+	<bean id="vinay" class="com.bridgelabz.dependency.constructor.Student">
+	
+	<constructor-arg name="studentName" value="vinay" />
+	<constructor-arg name="id" value ="4" />
+	
+	</bean>
+	
+	
+	
+	
+	
+</beans>
