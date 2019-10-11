@@ -1,17 +1,23 @@
 /******************************************************************************
  
- *  Purpose: Sim Interface for calling and data methods 
+ *  Purpose: To perform Setter dependency injection using spring 
  *  @author  Abhishek Rawat
  *  @version 1.0
  *  @since   10-10-2019
  *
  ******************************************************************************/
-package com.bridgelabz.ioc;
+package com.bridgelabz.dependency.object;
 
-public interface Sim {
+public class Math implements Paper{
 	
-	void calling();
-	void data();
 	
+	
+
+
+	@Override
+	public void paper() {
+		System.out.println("Math paper started .");
+		
+	}
 
 }

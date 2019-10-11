@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+	<bean id="heart" class="com.bridgelabz.byname.Heart"></bean>
+	
+	<bean id="heartObject" class="com.bridgelabz.bytype.Heart"></bean>
+	
+	<bean id="heartObj" class="com.bridgelabz.byconstructor.Heart"></bean>
+
+
+	<bean id="human" class="com.bridgelabz.byname.HumanName"
+		autowire="byName">
+
+	</bean>
+
+	<bean id="human2" class="com.bridgelabz.bytype.HumanType"
+		autowire="byType">
+
+	</bean>
+	
+	<bean id="human3" class="com.bridgelabz.byconstructor.HumanConstructor"
+		autowire="constructor">
+
+	</bean>
+</beans>

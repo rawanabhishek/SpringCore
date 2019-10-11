@@ -3,38 +3,57 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-	
-	<bean id="student" class="com.bridgelabz.dependency.setter.Student">
-	<property name="studentName" value="Abhishek"></property>
-	<property name="id" value ="1"></property>
+
+	<bean id="student"
+		class="com.bridgelabz.dependency.setter.StudentSetter">
+		<property name="studentName" value="Abhishek"></property>
+		<property name="id" value="1"></property>
 	</bean>
-	
-	
-	<bean id="rishi" class="com.bridgelabz.dependency.setter.Student">
-	
-	<property name="studentName" value="Rishi"></property>
-	<property name="id" value ="2"></property>
-	
+
+
+	<bean id="rishi"
+		class="com.bridgelabz.dependency.setter.StudentSetter">
+
+		<property name="studentName" value="Rishi"></property>
+		<property name="id" value="2"></property>
+
 	</bean>
-	
-	
-	<bean id="vishnu" class="com.bridgelabz.dependency.constructor.Student">
-	
-	<constructor-arg name="studentName" value="vishnu" />
-	<constructor-arg name="id" value ="3" />
-	
+
+
+	<bean id="vishnu"
+		class="com.bridgelabz.dependency.constructor.StudentConstructor">
+
+		<constructor-arg name="studentName" value="vishnu" />
+		<constructor-arg name="id" value="3" />
+
 	</bean>
-	
-	
-	<bean id="vinay" class="com.bridgelabz.dependency.constructor.Student">
-	
-	<constructor-arg name="studentName" value="vinay" />
-	<constructor-arg name="id" value ="4" />
-	
+
+
+	<bean id="vinay"
+		class="com.bridgelabz.dependency.constructor.StudentConstructor">
+
+		<constructor-arg name="studentName" value="vinay" />
+		<constructor-arg name="id" value="4" />
+
 	</bean>
-	
-	
-	
-	
-	
+
+	<bean id="mathpaper" class="com.bridgelabz.dependency.object.Math"></bean>
+
+
+	<bean id="stu" class="com.bridgelabz.dependency.object.Student">
+
+		<property name="paper" ref="mathpaper" />
+
+	</bean>
+
+	<bean id="anotherstudent" class="com.bridgelabz.dependency.object.AnotherStudent">
+
+		<property name="paper" ref="mathpaper" />
+
+	</bean>
+
+
+
+
+
 </beans>

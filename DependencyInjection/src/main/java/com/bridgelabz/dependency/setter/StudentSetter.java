@@ -1,6 +1,14 @@
+/******************************************************************************
+ 
+ *  Purpose: Model Clas For for Setter dependency injection using spring 
+ *  @author  Abhishek Rawat
+ *  @version 1.0
+ *  @since   10-10-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.dependency.setter;
 
-public class Student {
+public class StudentSetter {
 
 	String studentName;
 	int id;

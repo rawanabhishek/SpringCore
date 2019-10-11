@@ -1,3 +1,12 @@
+
+/******************************************************************************
+ 
+ *  Purpose: To perform Setter dependency injection using spring 
+ *  @author  Abhishek Rawat
+ *  @version 1.0
+ *  @since   10-10-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.dependency.setter;
 
 import org.springframework.context.ApplicationContext;
@@ -9,10 +18,10 @@ public class Exam {
 		
 		@SuppressWarnings("resource")
 		ApplicationContext context =new  ClassPathXmlApplicationContext("beans.xml");
-		Student abhi=context.getBean("student" , Student.class);
+		StudentSetter abhi=context.getBean("student" , StudentSetter.class);
 		abhi.displayStudentInfo();
 		
-		Student rishi=context.getBean("rishi" ,Student.class);
+		StudentSetter rishi=context.getBean("rishi" ,StudentSetter.class);
 		rishi.displayStudentInfo();
 
 
