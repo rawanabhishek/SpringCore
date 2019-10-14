@@ -1,6 +1,6 @@
 /******************************************************************************
  
- *  Purpose: To perform Setter dependency injection using spring 
+ *  Purpose:Student class to inject student object 
  *  @author  Abhishek Rawat
  *  @version 1.0
  *  @since   11-10-2019

@@ -1,6 +1,6 @@
 /******************************************************************************
  
- *  Purpose: To perform Setter dependency injection using spring 
+ *  Purpose: to perfrom depency injection of object using setter injection  
  *  @author  Abhishek Rawat
  *  @version 1.0
  *  @since   11-10-2019

@@ -1,4 +1,13 @@
+/******************************************************************************
+ 
+ *  Purpose: College class for setter injection of principal and teacher  
+ *  @author  Abhishek Rawat
+ *  @version 1.0
+ *  @since   11-10-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.usinginterface;
+
 
 
 

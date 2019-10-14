@@ -1,3 +1,11 @@
+/******************************************************************************
+ 
+ *  Purpose: To create College Bean through java  
+ *  @author  Abhishek Rawat
+ *  @version 1.0
+ *  @since   11-10-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.propertiesfile;
 
 

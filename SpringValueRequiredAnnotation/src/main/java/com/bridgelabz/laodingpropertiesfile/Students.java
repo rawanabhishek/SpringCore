@@ -1,10 +1,20 @@
 package com.bridgelabz.laodingpropertiesfile;
 
+
+/******************************************************************************
+
+ *  Purpose: Student Class using annoations value and required annotation   
+ *  @author  Abhishek Rawat
+ *  @version 1.0
+ *  @since   11-10-2019
+ *
+ ******************************************************************************/
 import org.springframework.beans.factory.annotation.Value;
 
 public class Students {
 	
 	@Value("${student.name}")
+
 	private String name;
 	
 	@Value("${student.intrestedCourse}")
