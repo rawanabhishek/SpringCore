@@ -17,10 +17,11 @@ public class Body {
 
 	public static void main(String[] args) {
 	
-		@SuppressWarnings("resource")
+		
 		ApplicationContext context =new ClassPathXmlApplicationContext("beans.xml");
 		HumanType human=context.getBean("human2" ,HumanType.class);
 		human.startPumping();
+		((ClassPathXmlApplicationContext)context).close();
 
 	}
 

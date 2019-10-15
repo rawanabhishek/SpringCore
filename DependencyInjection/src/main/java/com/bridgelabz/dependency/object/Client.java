@@ -15,7 +15,7 @@ public class Client {
 
 	public static void main(String[] args) {
 		
-		@SuppressWarnings("resource")
+		
 		ApplicationContext context =new  ClassPathXmlApplicationContext("beans.xml");
 		
 		Student stu=context.getBean("stu", Student.class);
@@ -25,6 +25,7 @@ public class Client {
 		AnotherStudent another=context.getBean("anotherstudent", AnotherStudent.class);
 		another.papers();
 		
+		((ClassPathXmlApplicationContext)context).close();
 		
 
 	}

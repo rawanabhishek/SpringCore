@@ -1,3 +1,13 @@
+/******************************************************************************
+ *  Purpose: Program is written for running the @Aspect which will be invoked 
+ *  		 before the getName() method calls
+ *  		 
+ *
+ *  @author  Abhishek Rawat
+ *  @version 1.0
+ *  @since   14-10-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.aop.controller;
 
 import org.springframework.context.ApplicationContext;
@@ -12,7 +22,9 @@ public class AopMain {
 		ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
 		Shape shape=context.getBean("shapeService", Shape.class);
 		shape.getCircle().setName("Abhishek");
-		System.out.println(shape.getCircle().getName());
+		
+		shape.getCircle().returingAfter("vishnu");
+		
 		
 		
 		

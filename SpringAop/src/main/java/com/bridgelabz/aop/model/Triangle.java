@@ -1,3 +1,13 @@
+
+/******************************************************************************
+ *  Purpose: Program is written for specifying the shape of triangle
+ *  		 
+ *
+ *  @author  Abhishek Rawat
+ *  @version 1.0
+ *  @since   14-10-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.aop.model;
 
 public class Triangle {

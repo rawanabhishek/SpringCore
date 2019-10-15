@@ -15,11 +15,12 @@ public class Client {
 
 	public static void main(String[] args) {
 		
-		@SuppressWarnings("resource")
+		
 		ApplicationContext context =new  ClassPathXmlApplicationContext("beans.xml");
 		
 		Students stu=context.getBean("student", Students.class);
 		stu.displayStudentInfo();
+		((ClassPathXmlApplicationContext)context).close();
 		
 		
 		

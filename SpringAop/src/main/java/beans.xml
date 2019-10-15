@@ -8,25 +8,35 @@
         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 
-<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
 	<bean name="triangle" class="com.bridgelabz.aop.model.Triangle">
 		<property name="name" value="triangle"></property>
 
-
-
 	</bean>
-
-
 
 	<bean name="circle" class="com.bridgelabz.aop.model.Circle">
-		<property name="name" value="circle"></property>
+<!-- 		<property name="name" value="circle"></property>  -->
 
 
 
 	</bean>
-	<bean name="shapeService" class="com.bridgelabz.aop.service.Shape" autowire="byName"></bean>
-	
-	<bean name="loggingAspect" class="com.bridgelabz.aop.aspect.LoggingAspect"></bean>
-	
+	<bean name="shapeService" class="com.bridgelabz.aop.service.Shape"
+		autowire="byName"></bean>
+
+	<bean name="loggingAspect"
+		class="com.bridgelabz.aop.aspect.LoggingAspect"></bean>
+		
+		
+<!-- 			<aop:config> -->
+<!-- 		<aop:aspect id="annoLoginAspect" ref="annoLoginAspect"> -->
+		
+<!-- 			<aop:around method="aroundAdviceReturnedAllGetters" -->
+<!-- 				pointcut="execution(* get*())" /> -->
+<!-- 		</aop:aspect> -->
+
+
+
+<!-- 	</aop:config> -->
+
 
 </beans>
